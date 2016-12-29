@@ -1,4 +1,5 @@
 import { NgModule }                     from '@angular/core';
+import { HttpModule, JsonpModule }      from '@angular/http';
 import { BrowserModule }                from '@angular/platform-browser';
 import { LocationStrategy,
          HashLocationStrategy }         from '@angular/common';
@@ -16,17 +17,13 @@ import { BreadcrumbsComponent }         from './shared/breadcrumb.component';
 import { AppRoutingModule }             from './app.routing';
 
 //Layouts
-import { FullLayoutComponent }          from './layouts/full-layout.component';
-import { SimpleLayoutComponent }        from './layouts/simple-layout.component';
-
-import { NgReduxModule, NgRedux, DevToolsExtension } from 'ng2-redux';
-import { NgReduxRouterModule, NgReduxRouter } from 'ng2-redux-router';
-import { rootReducer }                  from './reducers';
-import { MainChartActions }             from './actions/main-chart-data-actions';
-import { DashboardChartActions }        from './actions/dashboard-chart-data-actions';
+import { FullLayoutComponent, SimpleLayoutComponent}          from './layouts';
+//Redux
+import { NgReduxModule, NgRedux, DevToolsExtension }          from 'ng2-redux';
+import { NgReduxRouterModule, NgReduxRouter }                 from 'ng2-redux-router';
+import { rootReducer }                                        from './reducers';
+import { MainChartActions, DashboardChartActions }            from './actions';
 import { DashboardChartDataService, MainChartDataService }    from './services';
-
-import { HttpModule, JsonpModule }      from '@angular/http';
 
 @NgModule({
     imports: [
@@ -56,8 +53,7 @@ import { HttpModule, JsonpModule }      from '@angular/http';
 })
 export class AppModule {
   constructor(ngRedux: NgRedux<any>, devTools: DevToolsExtension, ngReduxRouter: NgReduxRouter) {
-    ngRedux.configureStore(rootReducer, {},[],
-      devTools.isEnabled() ? [ devTools.enhancer() ] : []);
-    ngReduxRouter.initialize(/* args */);
+    ngRedux.configureStore(rootReducer, {},[], devTools.isEnabled() ? [ devTools.enhancer() ] : []);
+    ngReduxRouter.initialize();
   }
 }

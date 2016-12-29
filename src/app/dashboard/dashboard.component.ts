@@ -18,17 +18,11 @@ export class DashboardComponent implements OnInit  {
       this.ngRedux
       .select(state=>state.dashboardChartData)
       .subscribe(data=>{
-        if(data.hasOwnProperty("barChartData")){
-          this.lineChartData = ( data.lineChartData.length) ? data.lineChartData : [{data:[], label:""}];
-          this.barChartData = ( data.barChartData.length) ? data.barChartData : [{data:[], label:""}];
-          this.pieChartData = ( data.pieChartData.length) ? data.pieChartData : [{data:[], label:""}];
-          this.doughnutChartData = ( data.doughnutChartData.length) ? data.doughnutChartData : [{data:[], label:""}];
-        }else{
-          this.lineChartData = ( data.length) ? data.lineChartData : [{data:[], label:""}];
-          this.barChartData = ( data.length) ? data.barChartData : [{data:[], label:""}];
-          this.pieChartData = ( data.length) ? data.pieChartData : [];
-          this.doughnutChartData = ( data.length) ? data.doughnutChartData : [];
-        }
+        this.lineChartData = ( data.hasOwnProperty("barChartData") && data.lineChartData.length) ? data.lineChartData : [{data:[], label:""}];
+        this.barChartData = ( data.hasOwnProperty("barChartData") && data.barChartData.length) ? data.barChartData : [{data:[], label:""}];
+        this.pieChartData = ( data.hasOwnProperty("barChartData") && data.pieChartData.length) ? data.pieChartData : [];
+        this.doughnutChartData = ( data.hasOwnProperty("barChartData") && data.doughnutChartData.length) ? data.doughnutChartData : [];
+
       });
     }
     // events

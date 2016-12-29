@@ -6,6 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "hmr": "ng serve --hmr -e=hmr",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
@@ -21,6 +22,7 @@
     "@angular/platform-browser": "^2.3.1",
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
+    "@types/webpack-env": "^1.12.1",
     "chart.js": "^2.3.0",
     "core-js": "^2.4.1",
     "ng2-bootstrap": "^1.1.16",
@@ -31,10 +33,12 @@
     "redux-logger": "^2.7.4",
     "rxjs": "^5.0.1",
     "ts-helpers": "^1.1.1",
+    "webpack-env": "^0.8.0",
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^2.3.1",
+    "@angularclass/hmr": "^1.2.2",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.24",
