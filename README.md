@@ -1,4 +1,4 @@
-# Ng2ReduxHelloworld
+# Angular 2 seed for Dashboard App with Redux Architectural pattern
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
