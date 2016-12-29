@@ -1,9 +1,23 @@
-# Ng2ReduxHelloworld
+# Angular 2 seed for Dashboard App with Redux Architectural pattern
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
+## Features
+* TypeScript
+* Ng2-Redux - Redux Architectural pattern
+* Compatible with Reactive Extension Tool.
+* Responsive layout
+* Bootstrap 4 CSS Framework
+* Sass
+* Angular 2
+* Ng2-charts
+* HMR
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## HMR
+Run `npm run hmr`
 
 ## Code scaffolding
 
