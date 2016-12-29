@@ -1,4 +1,4 @@
-# Angular 2 seed for Dashboard App with Redux Architectural pattern
+# Angular 2 seed for Dashboard App with Redux 
 
 Demo URL: https://rajesh-babu.github.io/ng2-redux-dashboard-seed/output/#/dashboard
 
