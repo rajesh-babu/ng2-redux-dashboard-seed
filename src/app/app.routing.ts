@@ -1,3 +1,9 @@
+/**
+ * Dashboard App: App Routing
+ * @contrib Rajesh Thoghuluva
+ * @version 1.0.0
+ */
+
 import { NgModule }                 from '@angular/core';
 import { Routes,
          RouterModule }             from '@angular/router';

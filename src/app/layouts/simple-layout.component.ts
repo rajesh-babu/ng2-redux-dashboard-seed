@@ -1,3 +1,9 @@
+/**
+ * Dashboard App: Simple-layout Component
+ * @contrib Rajesh Thoghuluva
+ * @version 1.0.0
+ */
+
 import { Component, OnInit }        from '@angular/core';
 
 @Component({

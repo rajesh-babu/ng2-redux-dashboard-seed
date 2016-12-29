@@ -1,3 +1,8 @@
+/**
+ * Dashboard App: Sidevar Directive
+ * @contrib Rajesh Thoghuluva
+ * @version 1.0.0
+ */
 import { Directive, HostListener } from '@angular/core';
 
 /**

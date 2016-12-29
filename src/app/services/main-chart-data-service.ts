@@ -1,3 +1,9 @@
+/**
+ * Dashboard App: Main Chart services
+ * @contrib Rajesh Thoghuluva
+ * @version 1.0.0
+ */
+
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';

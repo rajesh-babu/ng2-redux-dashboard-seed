@@ -1,3 +1,8 @@
+/**
+ * Dashboard App: Dashboard Actions
+ * @contrib Rajesh Thoghuluva
+ * @version 1.0.0
+ */
 import { Injectable } from '@angular/core';
 import { NgRedux } from 'ng2-redux';
 

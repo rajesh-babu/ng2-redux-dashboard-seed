@@ -1,3 +1,8 @@
+/**
+ * Dashboard App: Breadcrumb Component
+ * @contrib Rajesh Thoghuluva
+ * @version 1.0.0
+ */
 import { Component }                                from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd }    from '@angular/router';
 import 'rxjs/add/operator/filter';

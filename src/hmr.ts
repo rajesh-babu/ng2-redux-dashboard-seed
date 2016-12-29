@@ -1,3 +1,8 @@
+/**
+ * Dashboard App: HMR
+ * @contrib Rajesh Thoghuluva
+ * @version 1.0.0
+ */
 import { NgModuleRef, ApplicationRef } from '@angular/core';
 import { createNewHosts } from '@angularclass/hmr';
 

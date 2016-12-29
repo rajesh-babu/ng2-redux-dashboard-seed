@@ -1,3 +1,8 @@
+/**
+ * Dashboard App: App Module
+ * @contrib Rajesh Thoghuluva
+ * @version 1.0.0
+ */
 import { NgModule }                     from '@angular/core';
 import { HttpModule, JsonpModule }      from '@angular/http';
 import { BrowserModule }                from '@angular/platform-browser';
